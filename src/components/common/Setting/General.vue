@@ -128,27 +128,27 @@ function handleImportButtonClick(): void {
         <div class="flex-1">
           <NInput v-model:value="avatar" placeholder="" />
         </div>
-        <NButton size="tiny" text type="primary" @click="updateUserInfo({ avatar })">
-          {{ $t('common.save') }}
-        </NButton>
+        <!--        <NButton size="tiny" text type="primary" @click="updateUserInfo({ avatar })"> -->
+        <!--          {{ $t('common.save') }} -->
+        <!--        </NButton> -->
       </div>
       <div class="flex items-center space-x-4">
-        <span class="flex-shrink-0 w-[100px]">{{ $t('setting.name') }}</span>
-        <div class="w-[200px]">
-          <NInput v-model:value="name" placeholder="" />
-        </div>
-        <NButton size="tiny" text type="primary" @click="updateUserInfo({ name })">
-          {{ $t('common.save') }}
-        </NButton>
+        <span class="flex-shrink-0 w-[100px]">小浣熊</span>
+        <!--        <div class="w-[200px]"> -->
+        <!--          <NInput v-model:value="name" placeholder="" /> -->
+        <!--        </div> -->
+        <!--        <NButton size="tiny" text type="primary" @click="updateUserInfo({ name })"> -->
+        <!--          {{ $t('common.save') }} -->
+        <!--        </NButton> -->
       </div>
       <div class="flex items-center space-x-4">
-        <span class="flex-shrink-0 w-[100px]">{{ $t('setting.description') }}</span>
-        <div class="flex-1">
-          <NInput v-model:value="description" placeholder="" />
-        </div>
-        <NButton size="tiny" text type="primary" @click="updateUserInfo({ description })">
-          {{ $t('common.save') }}
-        </NButton>
+        <span class="flex-shrink-0 w-[100px]">又是美好的一天</span>
+        <!--        <div class="flex-1"> -->
+        <!--          <NInput v-model:value="description" placeholder="" /> -->
+        <!--        </div> -->
+        <!--        <NButton size="tiny" text type="primary" @click="updateUserInfo({ description })"> -->
+        <!--          {{ $t('common.save') }} -->
+        <!--        </NButton> -->
       </div>
       <div
         class="flex items-center space-x-4"
