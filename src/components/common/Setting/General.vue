@@ -4,7 +4,7 @@ import { NButton, NInput, NPopconfirm, NSelect, useMessage } from 'naive-ui'
 import type { Language, Theme } from '@/store/modules/app/helper'
 import { SvgIcon } from '@/components/common'
 import { useAppStore, useUserStore } from '@/store'
-import type { UserInfo } from '@/store/modules/user/helper'
+// import type { UserInfo } from '@/store/modules/user/helper'
 import { getCurrentDate } from '@/utils/functions'
 import { useBasicLayout } from '@/hooks/useBasicLayout'
 import { t } from '@/locales'
@@ -22,9 +22,9 @@ const userInfo = computed(() => userStore.userInfo)
 
 const avatar = ref(userInfo.value.avatar ?? '')
 
-const name = ref(userInfo.value.name ?? '')
+// const name = ref(userInfo.value.name ?? '')
 
-const description = ref(userInfo.value.description ?? '')
+// const description = ref(userInfo.value.description ?? '')
 
 const language = computed({
   get() {
@@ -59,10 +59,10 @@ const languageOptions: { label: string; key: Language; value: Language }[] = [
   { label: 'English', key: 'en-US', value: 'en-US' },
 ]
 
-function updateUserInfo(options: Partial<UserInfo>) {
-  userStore.updateUserInfo(options)
-  ms.success(t('common.success'))
-}
+// function updateUserInfo(options: Partial<UserInfo>) {
+//   userStore.updateUserInfo(options)
+//   ms.success(t('common.success'))
+// }
 
 function handleReset() {
   userStore.resetUserInfo()

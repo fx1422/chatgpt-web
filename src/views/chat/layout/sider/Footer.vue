@@ -1,10 +1,10 @@
 <script setup lang='ts'>
-import { defineAsyncComponent, ref } from 'vue'
+// import { defineAsyncComponent, ref } from 'vue'
 import { UserAvatar } from '@/components/common'
 
-const Setting = defineAsyncComponent(() => import('@/components/common/Setting/index.vue'))
+// const Setting = defineAsyncComponent(() => import('@/components/common/Setting/index.vue'))
 
-const show = ref(false)
+// const show = ref(false)
 </script>
 
 <template>
